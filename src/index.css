@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #E6E726;
+  --color-brand-yellowHover: #D4D51E;
+  --color-brand-green: #22C55E;
+  --color-brand-dark: #11181C;
+  --color-brand-surface: #FBFBF8;
+  --color-brand-muted: #687076;
+  --color-brand-border: #E6E8EB;
+  --color-brand-limeBg: #EEF389;
+
+  --font-serif: 'Playfair Display', Georgia, Cambria, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-brand-serif: 'Playfair Display', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #F8F8F5;
+  color: #11181C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.font-brand-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Hero signature glow card gradient */
+.hero-glow-card {
+  background: linear-gradient(135deg, #f7ff9e 0%, #aef83b 45%, #22e67a 100%);
+}
+
+/* Watermark typography styling */
+.watermark-text {
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Custom interactive animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D51E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B6B714;
+}

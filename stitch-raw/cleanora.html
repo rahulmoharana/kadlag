@@ -1,0 +1,510 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cleanora — Bringing Brilliance to Every Home</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#E6E726',
+              yellowHover: '#D4D51E',
+              green: '#22C55E',
+              dark: '#11181C',
+              surface: '#FBFBF8',
+              muted: '#687076',
+              border: '#E6E8EB',
+              limeBg: '#EEF389',
+            }
+          },
+          fontFamily: {
+            serif: ['Georgia', 'Cambria', 'serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet">
+<style data-purpose="base-typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F8F8F5;
+      color: #11181C;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-brand-serif {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+<style data-purpose="custom-utilities">
+    /* Subtle glow and decorative text treatments */
+    .hero-glow-card {
+      background: linear-gradient(135deg, #E6F379 0%, #2CD764 100%);
+    }
+    .watermark-text {
+      letter-spacing: -0.05em;
+      line-height: 0.8;
+      user-select: none;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-[#F8F8F5] text-brand-dark min-h-screen antialiased selection:bg-brand-yellow selection:text-black">
+<!-- BEGIN: SiteNavigation -->
+<header class="sticky top-0 z-50 bg-[#F8F8F5]/90 backdrop-blur-md border-b border-brand-border/60 transition-all duration-200"><div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+  <!-- Wordmark & Logo -->
+  <a class="flex items-center space-x-3.5 text-brand-dark hover:opacity-80 transition-opacity" href="#">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3heLnI25CIL40HQxE4zvk8uboIQ2CLmV7C9Y1ZVlsvvgrw-drsUI1n0jBvpCIqp1YC7dNjnuOYZkJ8Xus_m2WfUkTR3jaPcIVwMwR2a82_dGVYIGVY4_gKDud8275MXxX2rl34EInxe7YuiMhmwEMfhQFSVdHGk3scZdJFISRvmJUYuD7dExVr_BSDzc910aFbwmcyuOIfNSuXmw5BUrN4z2D0mW2mbrpqh1ezF-STa8AjTA8Hcb8" alt="Kadlag Facility Management Logo" class="h-16 w-auto object-contain drop-shadow-sm">
+    <div class="flex flex-col text-left">
+      <span class="text-xl font-black tracking-wider uppercase text-brand-dark leading-none">KADLAG</span>
+      <span class="text-[11px] font-bold tracking-widest uppercase text-stone-500 mt-1">Facility Management</span>
+    </div>
+  </a>
+  <!-- Primary Nav items -->
+  <nav class="hidden md:flex items-center space-x-9 text-sm font-medium text-stone-700">
+    <a class="text-brand-dark font-semibold transition-colors hover:text-black" href="#hero">Home</a>
+    <a class="hover:text-brand-dark transition-colors" href="#about">About</a>
+    <a class="hover:text-brand-dark transition-colors" href="#services">Services</a>
+    <a class="hover:text-brand-dark transition-colors" href="#how-it-works">Pricing</a>
+    <a class="hover:text-brand-dark transition-colors" href="#testimonials">Testimonials</a>
+  </nav>
+  <!-- Action Button -->
+  <div class="flex items-center space-x-4">
+    <a class="inline-flex items-center justify-center px-7 py-3 rounded-full bg-brand-yellow hover:bg-brand-yellowHover text-black text-sm font-semibold tracking-wide transition-all shadow-sm hover:shadow active:scale-95" href="#contact">
+      Contact Us
+    </a>
+  </div>
+</div></header>
+<!-- END: SiteNavigation -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative overflow-hidden bg-[#F8F8F5] pt-4 sm:pt-6 pb-12 lg:pb-16" id="hero"><div class="max-w-7xl mx-auto px-6 relative min-h-[580px] lg:min-h-[700px] flex items-center">
+  <!-- Giant serif watermark typography behind the cleaner portrait -->
+  <div class="absolute bottom-0 left-0 right-0 z-0 pointer-events-none select-none flex justify-center lg:justify-start overflow-hidden">
+    <span class="font-brand-serif italic font-bold text-[140px] sm:text-[210px] lg:text-[280px] text-white/95 drop-shadow-sm tracking-tight leading-none translate-y-6 sm:translate-y-10 lg:translate-y-12 select-none" style="text-shadow: 0 4px 30px rgba(0,0,0,0.06);">Cleanora</span>
+  </div>
+
+  <!-- Prominent cleaner cutout focal portrait positioned right/center -->
+  <div class="absolute inset-y-0 right-0 sm:right-6 lg:right-12 w-full sm:w-[85%] lg:w-[68%] z-10 flex items-end justify-end pointer-events-none">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9X8gQrHDUMjtthTWwjg0iEZTC61nVq1z8iILVC2MAw40TkELjVLQ44gLvPJPCAXyydWVUuEoHj7SDXp0DQ6dtik2YgmhsDVsyBMP3Ptdld7VmBrGDFj6qf60iLqrrQkN6FtIQTT0M0q5QKWXQY5sMpBbxVGAIbFO817-qt_x-SbCyh9I5Z_j21STLQ6DovIUhSy0EhXuOijgpVq4QUM_lrA5XTAklXgm9D2Qy4I" alt="Professional cleaner smiling in blue apron with yellow gloves and spray bottle" class="h-[520px] sm:h-[620px] lg:h-[720px] w-auto object-cover object-top drop-shadow-2xl pointer-events-auto rounded-3xl sm:rounded-none">
+  </div>
+
+  <!-- Floating vibrant green gradient rounded rectangle card on left -->
+  <div class="relative z-20 max-w-lg lg:max-w-md w-full my-8 lg:my-0 lg:-mt-28">
+    <div class="rounded-3xl p-8 sm:p-10 shadow-2xl relative overflow-hidden backdrop-blur-md transition-all duration-300 hover:shadow-3xl" style="background: linear-gradient(135deg, #f7ff9e 0%, #aef83b 45%, #22e67a 100%);">
+      <h1 class="text-3xl sm:text-4xl lg:text-[44px] font-normal leading-[1.15] text-[#11181C] tracking-tight">
+        Bringing Brilliance to Every Home
+      </h1>
+      <div class="mt-8">
+        <a href="#contact" class="inline-flex items-center text-sm font-semibold text-[#11181C] group hover:opacity-80 transition-opacity">
+          <span class="">Book Your Cleaning Today</span>
+          <span class="ml-2 transform group-hover:translate-x-1.5 transition-transform">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div></section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-20 lg:py-28 bg-white border-y border-brand-border/60" id="about">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Narrative Details -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center text-xs font-bold tracking-widest uppercase text-brand-dark space-x-1.5">
+<span class="">About Us</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-brand-dark leading-[1.2]">
+              Where Quality Cleaning Meets True Care
+            </h2>
+<p class="text-brand-muted text-base leading-relaxed pt-2">At Kadlag Facility Management, we believe a clean and well-maintained environment inspires wellness and peace of mind. Our trained professionals deliver eco-friendly cleaning tailored to your personal routine and schedule.</p>
+<!-- Value checklist -->
+<div class="space-y-4 pt-3">
+<div class="flex items-center space-x-3.5">
+<div class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center">
+<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-sm font-medium text-brand-dark">Every corner cleaned with expert care and detail.</span>
+</div>
+<div class="flex items-center space-x-3.5">
+<div class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center">
+<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-sm font-medium text-brand-dark">Safe for your home and the planet.</span>
+</div>
+<div class="flex items-center space-x-3.5">
+<div class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center">
+<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-sm font-medium text-brand-dark">Skilled team delivering reliable, quality service.</span>
+</div>
+</div>
+<!-- Learn More CTA -->
+<div class="pt-4">
+<a class="inline-flex items-center justify-center px-7 py-3 rounded-full bg-brand-yellow hover:bg-brand-yellowHover text-black text-sm font-semibold transition-all shadow-sm" href="#services">
+                Learn More
+              </a>
+</div>
+</div>
+<!-- Editorial Image with Floating Social Proof Badge -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5] max-w-md mx-auto lg:max-w-none"><img alt="Kadlag specialist kneeling in yellow apron and green gloves cleaning home floor" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1rPblegV6i3UhYPSxaEQ51RUKbVJXCAg_ObqaBiG6Tlzqj9eig7u07_S24bZG7a19LM3fmP26X1j1levC88ucf4Sh1n-Pa_PlueLO3WXSJvsVh7pK6cwK-ScZU8J1BBV-T5Fl6nE6_T1LjlOXRVbhOB76LWvj6ryb7tgN3gDVybU02AEbGNOylmlVc7U2Qg0h4Jg3l5qCwA5AKb7QT01TSUcaDGPuSB6eRAvVCbU"></div>
+<!-- Floating Pill Card 'Trusted By our customer' -->
+<div class="absolute -bottom-6 left-4 sm:left-10 bg-white/95 backdrop-blur-md border border-brand-border rounded-2xl p-4 sm:p-5 shadow-2xl flex items-center space-x-4">
+<div class="flex -space-x-2.5 overflow-hidden">
+<img alt="Customer avatar" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtzaP1t9Incq01Vnt_jX3PdpzLqvrUz8u4BbCDKLYi-hoUF04ITHSR_mAYxmL7jut07nbz7gbGVRCGzYwn4BUuk03c9YhhAYZ6xtvUBiW-ck5uFb93VI9zZqlRk5BSl602QL03VldZuudgH32aTAUrv5ItiIwx0ZX7yvVSBHD48_j0UTv0p4tg8qwktnHGdO1BAIENbDf05JXB9GnyuzgPbHpE4uYd1ndhO5-_Hl8">
+<img alt="Customer avatar" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP_GTgSAAwFMbqd5xTrmJjEdv-uYefZKMs4fvKlkXpag5TUtpPqxQ7KCE0lD2slxsSNui8BG5X-IXdJRRcXRzpIQjLWbrK_rbGrtk_j7o-f-1Q8D8VmjLJ9lI2-gLHqrBJw4oCXGF_LOzpLbrky33WjfM8kVzETD8ktdyBzZKDJnOJlHJLX64GszXwj3PL6YA0YJBOEFeA8Y5YkPrvJr30nHalvU191AcAxAx1s9M">
+<img alt="Customer avatar" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwuB-EerhtFDqACo1a3ylOK7n65ao-j1NYEkTtu-uhh5B8kdNOx-webwYpRdrKx1oV-lBtKqmc_0bjGylpaukvd7L3KK8D_ic_XsVNflt1LfJQwhEEuiO_H0VnAI6cVLx44NRVxn-iGqmhg7icgkPxiesYNxjl0Ubpwx-X1pn0KnWkjrP9Qs0JE00K3WYMA9NgtlMj9A6zKQ9UBWohi60evNv7P-yL--0zU8HseIQ">
+<img alt="Customer avatar" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHMZUA_aLyzI88ofSf_ipxvqK68MzFt6J2hLb0D1PNdrYQRPND7QxIeZ03nSIKL00xuCSWUhvil8CvsLBAkMSB1gsoxWTq9PZyje4g1RFCr3t0XaWohG92KfSq_m364JHnAHJN9dhUWIxnVf54mVzcLKIkvJ2I702sdlagG-_MUb6flBVb5HzSjAD8iND4GoLIgBRLwSWWAWBlWoRNU5laR4i2kg_QsLRKctFiz6o">
+</div>
+<div class="text-left">
+<p class="text-xs text-brand-muted font-medium">Trusted By our customer</p>
+<p class="text-sm font-bold text-brand-dark">1000+ <span class="text-xs font-normal text-brand-muted">Client Satisfied</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Counter Strip with dividers -->
+<div class="mt-24 pt-12 border-t border-brand-border/70 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
+<div class="border-r-0 sm:border-r border-brand-border/60 pr-4">
+<h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">10K+</h3>
+<p class="text-xs sm:text-sm text-brand-muted mt-1">Delighted Clients</p>
+</div>
+<div class="border-r-0 lg:border-r border-brand-border/60 pr-4">
+<h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">100K</h3>
+<p class="text-xs sm:text-sm text-brand-muted mt-1">Hours Of Cleaning</p>
+</div>
+<div class="border-r-0 sm:border-r border-brand-border/60 pr-4">
+<h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">4.9/5</h3>
+<p class="text-xs sm:text-sm text-brand-muted mt-1">Average Rating</p>
+</div>
+<div>
+<h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">15yrs</h3>
+<p class="text-xs sm:text-sm text-brand-muted mt-1">Industry Experience</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: ServicesSection -->
+<section class="py-24 max-w-7xl mx-auto px-6" id="services">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl sm:text-4xl font-medium tracking-tight text-brand-dark">
+            Tailored Cleaning Solutions
+          </h2>
+<p class="text-brand-muted text-sm sm:text-base mt-2">
+            Precision care for every room, work floor, and deep hygiene requirement.
+          </p>
+</div>
+<!-- Carousel Nav Buttons -->
+<div class="flex items-center space-x-3 mt-6 md:mt-0">
+<button aria-label="Previous service" class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center hover:bg-white transition-colors">
+<svg class="w-4 h-4 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<button aria-label="Next service" class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center hover:bg-white transition-colors">
+<svg class="w-4 h-4 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Service Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: Home Cleaning -->
+<article class="bg-white rounded-3xl overflow-hidden border border-brand-border/70 p-4 transition-all duration-300 hover:shadow-lg flex flex-col justify-between">
+<div class="relative h-64 rounded-2xl overflow-hidden mb-6">
+<img alt="Home cleaning specialist dusting shelves" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFEqP5tlvzh7lAdpEO3qgH2xf-cDXgccn2DDWQhmynR-hm16kmhga62ESbU36LYJ2TsuRfLSOM8P0k1i2zDI8VkRgsvJ4zFF52nrluMk2V6cocGLfDb0CvKI5S7bR6w7trGYLoZrqf0iavcUFfZuPeliuPdwLzxeykUWzxRfr1Lg69IUBHe85WgOIuYDcdbdCPPmnp_oo3Dcb-Ukyr0ebSTC4sqxiyrSNDwvARU_s">
+<div class="absolute bottom-4 left-4">
+<span class="bg-brand-yellow px-4 py-1.5 rounded-full text-xs font-semibold text-black inline-flex items-center space-x-1 shadow-sm">
+<span class="">Book Service</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-brand-dark">Home Cleaning</h3>
+<p class="text-sm text-brand-muted mt-2 leading-relaxed">
+              Keep your rooms spotless with routine dusting, mopping, and organized care.
+            </p>
+</div>
+</article>
+<!-- Card 2: Office Cleaning -->
+<article class="bg-white rounded-3xl overflow-hidden border border-brand-border/70 p-4 transition-all duration-300 hover:shadow-lg flex flex-col justify-between">
+<div class="relative h-64 rounded-2xl overflow-hidden mb-6">
+<img alt="Office professional sanitation and mopping" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUI9Q5jQuCe4y6-hJhXqzVrecUzeJeZNhVDhOixAexFSQSNW65P9F_opm_1I2eLzyZgpDRD59-jQdyErGwMsgEd4AU_3rHCAjWf7ZpFUXxy9TIhRadjh-Fyt9fAPTYaS5JvnlUMsFZHGLOXuXBnZJIj9mE3Wa54JyACr9lqLMtunI9QfY7leeqTH2hTcBUyYn5Yv3PLCA1If7GnJBHpT95MDcxX7X4MbeYxtezPtM">
+</div>
+<div>
+<h3 class="text-xl font-bold text-brand-dark">Office Cleaning</h3>
+<p class="text-sm text-brand-muted mt-2 leading-relaxed">
+              Keep your office spotless with routine dusting, mopping, and organized care.
+            </p>
+</div>
+</article>
+<!-- Card 3: Deep Cleaning -->
+<article class="bg-white rounded-3xl overflow-hidden border border-brand-border/70 p-4 transition-all duration-300 hover:shadow-lg flex flex-col justify-between">
+<div class="relative h-64 rounded-2xl overflow-hidden mb-6">
+<img alt="Specialist with spray kit and cleaning bucket" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAncPYvX9NQR_orcpb_h7Q8xuxuCLwQR6iC1n3SzLKUbMitWZ0LybWKG8-cpaewSBZm508rBleCV7GnKN4xKfe3fqu5HVG4LvXNC3khH3g_t9_385XvRaI0f45hpOK67ob8i05OhHJGTgU_BLGUm2Tt7wHNtwe-FtgLeL4yX8y1bnD6o_wrLhn_Xuz_lxfQDc62o4JZ8oox3x-o49B1w9qhursFFWhIBYbtrkABkWE">
+</div>
+<div>
+<h3 class="text-xl font-bold text-brand-dark">Deep Cleaning</h3>
+<p class="text-sm text-brand-muted mt-2 leading-relaxed">
+              Get a fresh start with detailed cleaning for kitchens, bathrooms, and hidden spots.
+            </p>
+</div>
+</article>
+</div>
+</section>
+<!-- END: ServicesSection -->
+<!-- BEGIN: HowItWorksSection -->
+<section class="py-24 bg-[#EAF087]/50 relative overflow-hidden border-t border-stone-200" id="how-it-works">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Header -->
+<div class="max-w-2xl mb-16">
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-brand-dark">How Kadlag Works to Keep Your Space Sparkling</h2>
+<p class="text-stone-700 text-sm sm:text-base mt-3">
+            From booking to spotless finish here’s how we make cleaning effortless for you.
+          </p>
+</div>
+<!-- 2-Column Workflow Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left Visual with Floating 98% Pill -->
+<div class="lg:col-span-6 relative">
+<div class="rounded-3xl overflow-hidden shadow-lg h-[460px] sm:h-[520px]">
+<img alt="Housekeeper cleaning kitchen floor with mop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiAGXjZeclV2YgFwKV_YyVMJ5zqpO_wv0Y87p3B29oHjdNNS3dVIZyz830KZIWmJhtaEI3u0nE8SBTYY5ASsZexFivTg6M569bkjfBOtrTLJ6zTVdHyOsPGS9N3cpId2YQOwl2I-y79MbRRP3DA8tvSNVJ6CnY8YmjuPDrc7G3JLjvibZm5zhufVeUFUNaiOkACSdyall1byAD1emEiHhNFyU84lbLL1NXWzH1L0E">
+</div>
+<!-- Floating 98% Satisfaction badge -->
+<div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md border border-brand-border rounded-2xl py-3 px-5 shadow-xl flex items-center space-x-3">
+<div>
+<p class="text-2xl font-bold text-brand-dark">98%</p>
+<p class="text-[11px] text-brand-muted font-medium">Customer Satisfaction</p>
+</div>
+<div class="w-9 h-9 rounded-full bg-brand-yellow flex items-center justify-center text-black">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Right Step Cards -->
+<div class="lg:col-span-6 space-y-4">
+<!-- Step 1 -->
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-border/60 hover:shadow-md transition-shadow">
+<span class="text-xs font-semibold text-brand-muted uppercase tracking-wider">Step 1</span>
+<h3 class="text-lg font-bold text-brand-dark mt-1">Book Your Cleaning Plan</h3>
+<p class="text-sm text-brand-muted mt-1.5 leading-relaxed">
+                Choose your preferred cleaning package and schedule your visit; we’ll match you with a trusted professional right away.
+              </p>
+</div>
+<!-- Step 2 (Active CTA card) -->
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-border/60 hover:shadow-md transition-shadow">
+<span class="text-xs font-semibold text-brand-muted uppercase tracking-wider">Step 2</span>
+<h3 class="text-lg font-bold text-brand-dark mt-1">We Arrive &amp; Get to Work</h3>
+<p class="text-sm text-brand-muted mt-1.5 leading-relaxed">
+                Our trained team reaches your doorstep on time, equipped with eco-friendly tools and supplies for a flawless clean.
+              </p>
+<div class="mt-4">
+<a class="inline-flex items-center px-4 py-2 rounded-full bg-brand-yellow hover:bg-brand-yellowHover text-black text-xs font-semibold tracking-wide transition-colors" href="#contact">
+                  Start Your Booking
+                </a>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-border/60 hover:shadow-md transition-shadow">
+<span class="text-xs font-semibold text-brand-muted uppercase tracking-wider">Step 3</span>
+<h3 class="text-lg font-bold text-brand-dark mt-1">Relax &amp; Enjoy Your Fresh Space</h3>
+<p class="text-sm text-brand-muted mt-1.5 leading-relaxed">
+                Sit back and breathe easy; your home is now spotless, refreshed, and ready for comfort.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HowItWorksSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="py-24 bg-white border-b border-brand-border/60" id="testimonials">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Header -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="text-3xl sm:text-4xl font-medium tracking-tight text-brand-dark">
+            Stories From Happy Homes
+          </h2>
+<p class="text-brand-muted text-sm sm:text-base mt-3 leading-relaxed">Our customers love how Kadlag makes their spaces shine with professional care, friendly service, and spotless attention to every detail.</p>
+</div>
+<!-- Grid Layout for Reviews -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+<!-- Testimonial 1 -->
+<article class="bg-[#FBFBF9] p-6 rounded-3xl border border-brand-border/70 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center space-x-3 mb-3">
+<img alt="Michael T." class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvqKYTpA35jx7RfneDjeLZCI4Jw4mzsdkw8OaEqcFbMyR3BxZ2F4yk_VNN7IkMcroEkn52U7NxekgYJn6GsW39xwqvu87uDOwHCO8feKw9N5ObHZha5luPU8D3oQjQzrQl-5ara7ScQNUIaFgUZ1yoeKgh0TaC-AyS6UmiAWvEx9Hpj21WYpxuWW-I1_XlFvly0zdlAzMmePXGr3G0ntW_OoF5aJrEpLGqmK6RxRw">
+<div>
+<h4 class="text-sm font-bold text-brand-dark">Michael T.</h4>
+<div class="flex text-amber-400 text-xs">★★★★★</div>
+</div>
+</div>
+<p class="text-sm text-stone-700 leading-relaxed">
+                “Their deep cleaning service completely transformed my kitchen. It feels like brand new again; worth every penny!”
+              </p>
+</div>
+<p class="text-[11px] font-medium text-stone-400 border-t border-brand-border/40 pt-3">— Booked Kadlag Deep Cleaning Service</p>
+</article>
+<!-- Middle Feature Card with Photo -->
+<div class="space-y-6">
+<div class="rounded-3xl overflow-hidden shadow-md h-56">
+<img alt="Housekeeping team at work" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt-2gahR_Tqpa8v7DVPK3jZcDNsUX--6S9fwz32Cb0d84D83xWd9Hy2UkugRxiaFjgLSu9x7zfrctUu_cYVSxAw3IQMY_fgZO8uesP8EB7V8lR3XiJnugnKwq7Hhu9VndFc8eOcfxK9_mPWBuKBUt-5ACyWThFLxnKh_4kFtjEPACUaNMLUvNw-jRLMb631csnGu5Hsd35fvVhvp3OKQtKywQENOT4A7LkYQybvYs">
+</div>
+<article class="bg-[#FBFBF9] p-6 rounded-3xl border border-brand-border/70 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center space-x-3 mb-3">
+<img alt="David P." class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzkNfPTIj4TyiifOsxOHAVXXfEbG2WQx9eMjNPZXcNnQGEsqiQxpctcIDb4YuBmBmMQzdBvhbkoJrRJcUY0lf2eClJNSDkq5HeSixkuF0xIZYkzWRZJUIKHD2e-iKNjESZaFf3UBdr_7e5eQzTeOTEALcQjeaAHK2JbOBBenxjYpIGh1v5ov5cWoKvRSq8Elo0SISLszt9r_fN3iLvXTd2yP_sIkQoM3GbFMw9StI">
+<div>
+<h4 class="text-sm font-bold text-brand-dark">David P.</h4>
+<div class="flex text-amber-400 text-xs">★★★★★</div>
+</div>
+</div>
+<p class="text-sm text-stone-700 leading-relaxed">
+                  “I loved how eco-friendly their products were. My house smells fresh, and I didn’t have to worry about harsh chemicals.”
+                </p>
+</div>
+<p class="text-[11px] font-medium text-stone-400 border-t border-brand-border/40 pt-3">— Booked Kadlag Office Cleaning Service</p>
+</article>
+</div>
+<!-- Testimonial 3 -->
+<div class="space-y-6">
+<article class="bg-[#FBFBF9] p-6 rounded-3xl border border-brand-border/70 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center space-x-3 mb-3">
+<img alt="Sara L." class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtpSJkAkg_Ud0e4qR8OPyj4Nuqyvva2QySKIgSNlTMJ-RMMOA4BiI973nrfRTtxiAoY2gq61l1cmVl5GrSqFNTWIevOkrMwXOcU1tAE6t902DBV0AP1Sl1TVPTc_t6SJxynUbZF7tQGBuE9FftckYXr2BREBkHQ_PHoiRNaJIcDOAJQ3XfUr8r_BZkn9_X435_OWBzQVoTp_R-K1ir_nma4_wTSuICs_W72wQMrGs">
+<div>
+<h4 class="text-sm font-bold text-brand-dark">Sara L.</h4>
+<div class="flex text-amber-400 text-xs">★★★★★</div>
+</div>
+</div>
+<p class="text-sm text-stone-700 leading-relaxed">
+                  “Booking was super easy, and the cleaners were so polite. I’ll definitely be using their weekly service!”
+                </p>
+</div>
+<p class="text-[11px] font-medium text-stone-400 border-t border-brand-border/40 pt-3">— Booked Kadlag Home Cleaning</p>
+</article>
+<article class="bg-[#FBFBF9] p-6 rounded-3xl border border-brand-border/70 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center space-x-3 mb-3">
+<img alt="Amelia R." class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWiJF6niWbLsg0eiAbrJoMsp99D7tKWxX9zDJR7VkiHlH8SUjdR_RNaDsnSCAM8ezO9-qeujmEjWGFZBTFnr2lZchb4n-t8JU-uQm626nQWf9GUI9F2wXGRogpu57gjIh9Ol94-fI5av9eEcH1y6iY_0DMlk6T5Nq-p7cVwfElafq5yImDfTuATMJl4ZZFE8SagXlu5BWGOoFZIscci2G-CtAGpsI8U-sS4AFTsw4">
+<div>
+<h4 class="text-sm font-bold text-brand-dark">Amelia R.</h4>
+<div class="flex text-amber-400 text-xs">★★★★★</div>
+</div>
+</div>
+<p class="text-sm text-stone-700 leading-relaxed">“I’ve never seen my apartment this clean before! The Kadlag team was punctual, friendly, and incredibly thorough.”</p>
+</div>
+<p class="text-[11px] font-medium text-stone-400 border-t border-brand-border/40 pt-3">— Booked Kadlag Deep Cleaning Service</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: ConversionBanner -->
+<section class="py-20 lg:py-24 bg-stone-900 text-white relative overflow-hidden" id="contact">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="max-w-3xl">
+<span class="text-brand-yellow text-xs font-bold uppercase tracking-widest">Get Started Today</span>
+<h2 class="text-3xl sm:text-5xl font-medium tracking-tight mt-3 text-white leading-tight">Join the Kadlag Community and Experience Sparkling Perfection.</h2>
+<p class="text-stone-300 text-base sm:text-lg mt-4 leading-relaxed max-w-xl">
+            Schedule your professional home or commercial service in under two minutes with guaranteed satisfaction.
+          </p>
+<!-- Simple Quick Action Form -->
+<form class="mt-8 flex flex-col sm:flex-row items-center gap-3 max-w-lg" onsubmit="event.preventDefault(); alert('Thank you for booking with Kadlag Facility Management! We will contact you shortly.');">
+<input class="w-full sm:flex-1 px-5 py-3.5 rounded-full bg-white/10 border border-white/20 text-white placeholder-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-brand-yellow" placeholder="Enter your email address" required="" type="email">
+<button class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-brand-yellow hover:bg-brand-yellowHover text-black font-semibold text-sm transition-colors whitespace-nowrap" type="submit">
+              Book Now
+            </button>
+</form>
+</div>
+</div>
+</section>
+<!-- END: ConversionBanner -->
+</main>
+<!-- BEGIN: SiteFooter -->
+<footer class="bg-[#11181C] text-stone-400 text-sm border-t border-stone-800 pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+<!-- Brand info -->
+<div class="lg:col-span-2 space-y-4"><div class="flex items-center space-x-3 mb-2">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3heLnI25CIL40HQxE4zvk8uboIQ2CLmV7C9Y1ZVlsvvgrw-drsUI1n0jBvpCIqp1YC7dNjnuOYZkJ8Xus_m2WfUkTR3jaPcIVwMwR2a82_dGVYIGVY4_gKDud8275MXxX2rl34EInxe7YuiMhmwEMfhQFSVdHGk3scZdJFISRvmJUYuD7dExVr_BSDzc910aFbwmcyuOIfNSuXmw5BUrN4z2D0mW2mbrpqh1ezF-STa8AjTA8Hcb8" alt="Kadlag Facility Management Logo" class="h-12 w-auto object-contain bg-white rounded-lg p-1">
+          <div>
+            <span class="text-base font-black tracking-wider text-white uppercase block leading-tight">KADLAG</span>
+            <span class="text-[11px] text-stone-400 font-semibold tracking-wider block">FACILITY MANAGEMENT PVT. LTD.</span>
+          </div>
+        </div>
+        <p class="text-[11px] font-bold tracking-widest text-brand-yellow uppercase">CLEAN. CARE. COMFORT.</p>
+        <p class="text-xs text-stone-400 max-w-sm leading-relaxed mt-2">
+          Elevating home hygiene and workspace wellness with premium, vetted, and planet-friendly cleaning services.
+        </p></div>
+<!-- Links: Services -->
+<div>
+<h5 class="text-white text-xs font-semibold uppercase tracking-wider mb-4">Services</h5>
+<ul class="space-y-2 text-xs">
+<li class=""><a class="hover:text-white transition-colors" href="#services">Residential Home Clean</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#services">Commercial &amp; Offices</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#services">Deep Spring Cleaning</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#services">Move-in / Move-out</a></li>
+</ul>
+</div>
+<!-- Links: Company -->
+<div>
+<h5 class="text-white text-xs font-semibold uppercase tracking-wider mb-4">Company</h5>
+<ul class="space-y-2 text-xs">
+<li class=""><a class="hover:text-white transition-colors" href="#about">About Us</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#how-it-works">Our Process</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#testimonials">Client Reviews</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#contact">Careers</a></li>
+</ul>
+</div>
+<!-- Links: Support -->
+<div>
+<h5 class="text-white text-xs font-semibold uppercase tracking-wider mb-4">Help &amp; Legal</h5>
+<ul class="space-y-2 text-xs">
+<li class=""><a class="hover:text-white transition-colors" href="#">Support Center</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">100% Clean Guarantee</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+<p class="">© 2025 Kadlag Facility Management Pvt. Ltd. All rights reserved.</p>
+<p class="mt-3 sm:mt-0">Crafted with care for radiant homes.</p>
+</div>
+</div>
+</footer>
+<!-- END: SiteFooter -->
+
+
+
+
+
+
+</body></html>

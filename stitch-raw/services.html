@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kadlag Facility Management — Artisanal Sanctuary &amp; Workspace Wellness</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-dim": "#dadad7",
+          "tertiary-fixed-dim": "#f9bd2b",
+          "on-tertiary-container": "#ac7f00",
+          "on-tertiary-fixed-variant": "#5c4200",
+          "on-secondary-fixed": "#1a1d00",
+          "on-tertiary": "#ffffff",
+          "inverse-primary": "#bbcac3",
+          "secondary": "#5c6300",
+          "surface-container": "#eeeeeb",
+          "on-error": "#ffffff",
+          "tertiary-container": "#2a1c00",
+          "background": "#f9f9f6",
+          "tertiary-fixed": "#ffdea2",
+          "on-error-container": "#93000a",
+          "outline-variant": "#c3c8c4",
+          "surface-container-high": "#e8e8e5",
+          "inverse-on-surface": "#f1f1ee",
+          "primary-container": "#14211d",
+          "on-primary-fixed": "#111e1a",
+          "primary": "#000705",
+          "surface-variant": "#e2e3e0",
+          "on-primary-container": "#7b8984",
+          "surface": "#f9f9f6",
+          "error": "#ba1a1a",
+          "secondary-fixed": "#dded34",
+          "on-tertiary-fixed": "#261900",
+          "on-secondary-container": "#606800",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#737875",
+          "on-primary-fixed-variant": "#3c4a45",
+          "secondary-container": "#daea30",
+          "on-surface-variant": "#434846",
+          "inverse-surface": "#2f312f",
+          "primary-fixed": "#d7e6df",
+          "on-background": "#1a1c1b",
+          "secondary-fixed-dim": "#c1d007",
+          "on-secondary-fixed-variant": "#454b00",
+          "tertiary": "#090500",
+          "surface-tint": "#53615c",
+          "surface-container-highest": "#e2e3e0",
+          "on-primary": "#ffffff",
+          "on-secondary": "#ffffff",
+          "surface-container-low": "#f4f4f1",
+          "surface-bright": "#f9f9f6",
+          "primary-fixed-dim": "#bbcac3",
+          "on-surface": "#1a1c1b",
+          "error-container": "#ffdad6"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "space-3xl": "6rem",
+          "space-2xl": "4rem",
+          "margin-desktop": "4rem",
+          "space-xs": "0.25rem",
+          "margin": "1.25rem",
+          "space-xl": "2.5rem",
+          "gutter-desktop": "2.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-xl-mobile": [
+            "Newsreader"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Newsreader"
+          ],
+          "headline-lg-mobile": [
+            "Newsreader"
+          ],
+          "display-xl": [
+            "Newsreader"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.625rem",
+              "fontWeight": "400"
+            }
+          ],
+          "display-xl-mobile": [
+            "2.75rem",
+            {
+              "lineHeight": "3.125rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.06em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "1.75rem",
+            {
+              "lineHeight": "2.25rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "3rem",
+            {
+              "lineHeight": "3.25rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "2.375rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-xl": [
+            "4.5rem",
+            {
+              "lineHeight": "4.75rem",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.375rem",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+@layer base {
+  body {
+    background-color: #f9f9f6;
+    color: #1a1c1b;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+</style>
+<meta content="web_standard" name="shell-type"/>
+</head>
+<body class="bg-background text-on-background min-h-screen selection:bg-secondary-container selection:text-primary-container">
+<!-- BEGIN: SiteNavigation -->
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-md shadow-[0_12px_32px_rgba(20,33,29,0.04)] transition-all duration-200">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-desktop h-24 flex items-center justify-between">
+<!-- Prominent Logo Link -->
+<a class="flex items-center gap-space-sm text-on-surface hover:opacity-90 transition-opacity focus:outline-none" data-path="home" href="#">
+<img alt="Kadlag Facility Management Logo" class="h-14 w-auto object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3heLnI25CIL40HQxE4zvk8uboIQ2CLmV7C9Y1ZVlsvvgrw-drsUI1n0jBvpCIqp1YC7dNjnuOYZkJ8Xus_m2WfUkTR3jaPcIVwMwR2a82_dGVYIGVY4_gKDud8275MXxX2rl34EInxe7YuiMhmwEMfhQFSVdHGk3scZdJFISRvmJUYuD7dExVr_BSDzc910aFbwmcyuOIfNSuXmw5BUrN4z2D0mW2mbrpqh1ezF-STa8AjTA8Hcb8"/>
+<div class="flex flex-col text-left">
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface leading-none">KADLAG</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant mt-space-xs">Facility Management</span>
+</div>
+</a>
+<!-- Primary Navigation -->
+<nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-bold after:scale-x-100">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:scale-x-0 after:transition-transform" data-path="home" href="#">Home</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:scale-x-0 after:transition-transform" data-path="about-us" href="#">About Us</a>
+<a aria-current="page" class="transition-colors py-space-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:transition-transform text-primary font-bold after:scale-x-100" data-path="services" href="#">Services</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:scale-x-0 after:transition-transform" data-path="pricing" href="#">Pricing</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:scale-x-0 after:transition-transform" data-path="contact-us" href="#">Contact Us</a>
+</nav>
+<!-- Citron Interactive CTA Action -->
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-full bg-secondary-container text-primary-container font-label-lg text-label-lg hover:bg-secondary-fixed transition-all shadow-[0_8px_20px_rgba(218,234,48,0.3)] active:scale-95" data-path="contact-us" href="#">
+        Contact Us
+      </a>
+</div>
+</div>
+</header>
+<!-- END: SiteNavigation -->
+<main class="pt-24 min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: EDITORIAL HEADER & BRAND PROMISE -->
+<section class="relative overflow-hidden pt-space-xl pb-space-2xl md:pb-space-3xl px-margin md:px-margin-desktop">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -top-32 right-1/4 w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-[120px] pointer-events-none -z-10"></div>
+<div class="absolute -bottom-24 -left-20 w-[420px] h-[420px] rounded-full bg-surface-dim/40 blur-[90px] pointer-events-none -z-10"></div>
+<div class="max-w-[1440px] mx-auto">
+<!-- Breadcrumb & Pre-heading metadata -->
+<div class="flex items-center gap-space-sm mb-space-md text-on-surface-variant">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span>
+          Kadlag Solutions Portfolio
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Clean. Care. Comfort.</span>
+</div>
+<!-- Asymmetrical Editorial Heading Block -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end">
+<div class="lg:col-span-8 space-y-space-md">
+<h1 class="font-display-xl text-display-xl text-primary leading-[1.05] tracking-tight">
+            Artisanal Care &amp; <span class="italic font-normal text-surface-tint">Commercial Precision</span> for Every Space.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            From serene residential sanctuaries to high-density commercial headquarters, Kadlag Facility Management orchestrates spotless hygiene through vetted personnel, hospital-grade eco-chemistries, and ISO-standardized protocols.
+          </p>
+</div>
+<!-- Quick Summary Metrics pill -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_20px_40px_rgba(20,33,29,0.06)] space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Active Operations</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold">
+              Pune &amp; MMR Region
+            </span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs text-center">
+<div class="p-2 rounded-lg bg-surface-container-low">
+<p class="font-headline-sm text-headline-sm text-primary font-bold">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">Eco-Certified</p>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<p class="font-headline-sm text-headline-sm text-primary font-bold">4.9/5</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">Audit Score</p>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<p class="font-headline-sm text-headline-sm text-primary font-bold">450+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">Trained Staff</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: INTERACTIVE FILTER CONTROLS & NAVIGATION -->
+<section class="sticky top-24 z-30 bg-surface/90 backdrop-blur-md shadow-[0_8px_24px_rgba(20,33,29,0.03)] py-space-md px-margin md:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto w-full md:w-auto pb-1 md:pb-0" id="filter-tab-container">
+<button class="service-tab-btn active-tab px-space-md py-space-sm rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm transition-all duration-200" onclick="filterServices('all', this)">
+          All Services (6)
+        </button>
+<button class="service-tab-btn px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-all duration-200" onclick="filterServices('residential', this)">
+          Residential Care
+        </button>
+<button class="service-tab-btn px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-all duration-200" onclick="filterServices('commercial', this)">
+          Corporate &amp; Commercial
+        </button>
+<button class="service-tab-btn px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-all duration-200" onclick="filterServices('specialized', this)">
+          Specialized Surfaces
+        </button>
+</div>
+<!-- Quick Action / Guarantee Pill -->
+<div class="hidden lg:flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span>Green Seal™ &amp; Non-Carcinogenic Degreasers</span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: EDITORIAL SERVICE CARD GRID (Cleanora Style) -->
+<section class="py-space-2xl px-margin md:px-margin-desktop bg-surface">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xl" id="services-grid">
+<!-- CARD 1: Residential Home Clean -->
+<article class="service-item group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_16px_36px_rgba(20,33,29,0.05)] hover:shadow-[0_24px_48px_rgba(20,33,29,0.1)] transition-all duration-300" data-category="residential">
+<!-- Image Frame with Aspect Ratio and Overlay Button -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Residential Sanctuary Cleaning" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional cheerful female housekeeper wearing neat blue uniform apron and protective yellow gloves meticulously cleaning an airy bright modern living room interior with soft natural morning light and potted green plants in background, realistic editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfSlFj1uI_KwmQmXZlOiJAsokF_B0m7LQjgyn7mhfEbrmtF_wDsPCkn7fgrXsuaJjnGutoe1WrfTCyXVpiaRBmG0Ucxh7mfld0JYp4YQJdsUCxbDeHBdjZ0SZvmCE1gkzocKGtBlabF-TZEV__IkpAOXWKFAySXisD9Wg0rb_J-W5i-yuua6Ff1Xvs_2dXWY0edGhK4oaj1QKlXC8pwIHsx-LRXFkb1WrJEz92D-c"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Residential Care
+              </span>
+</div>
+<!-- Floating Overlay Button inspired by reference -->
+<a class="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold shadow-[0_8px_16px_rgba(218,234,48,0.35)] hover:bg-secondary-fixed transition-all" href="#quote-calculator">
+              Book Service
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Card Content Body -->
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-surface-tint transition-colors">Residential Home Sanctuary</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">From ₹2,499</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Keep every living room, master suite, and kitchenette spotless with routine HEPA vacuuming, dusting, mopping, and microfiber air sanitization.
+              </p>
+<!-- Service Checkpoints -->
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Bedroom linen rotation &amp; upholstery vacuuming
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Pet-safe &amp; infant-safe certified organic sprays
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  High-touch switchboard &amp; fixture sterilization
+                </li>
+</ul>
+</div>
+<!-- Footer Meta -->
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">schedule</span>
+                3 - 4.5 Hours Duration
+              </span>
+<span class="font-semibold text-primary">2 Sanitarians Assigned</span>
+</div>
+</div>
+</article>
+<!-- CARD 2: Corporate & Office Cleaning -->
+<article class="service-item group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_16px_36px_rgba(20,33,29,0.05)] hover:shadow-[0_24px_48px_rgba(20,33,29,0.1)] transition-all duration-300" data-category="commercial">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Commercial Office Cleaning" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Uniformed professional facility management crew in crisp navy polo shirts and face masks cleaning a modern glass and timber corporate office open floor plan, industrial floor polisher buffing gleaming floors, cinematic warm office daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHkUOw2z0WvSt0DZceOsbjoU5ZT2BA0ZgwEhpFVyWhyj9U-3Vbo4eg7Hq2fzVy1BYeWNikvxcGuFQcrPUOgliQSTWl6nvhiSFmNBr9Ex7qvJ03j66-bvUdEayFBsk_Ga8kT27Td49QBHActQLrBOr6BQkYZJMcJ60YIRNEP2FBNaXdcDoLhsrqwNMrslYXtciMj3timaFu522yFV12-O5fgwOYB7fiMtxr1xpti3w"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                Corporate &amp; Commercial
+              </span>
+</div>
+<a class="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold shadow-[0_8px_16px_rgba(218,234,48,0.35)] hover:bg-secondary-fixed transition-all" href="#quote-calculator">
+              Book Service
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-surface-tint transition-colors">Corporate &amp; Office Cleaning</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">Custom SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Discreet off-hours and day-porter sanitization for executive desks, meeting booths, server corridors, and high-footfall pantry hubs.
+              </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Nightly workstation keyboard &amp; monitor detailing
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Restroom continuous odor &amp; micro-pathogen control
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Industrial dual-action floor rotary scrubbing
+                </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">event_repeat</span>
+                Daily / Weekly Rosters
+              </span>
+<span class="font-semibold text-primary">Dedicated Supervisor</span>
+</div>
+</div>
+</article>
+<!-- CARD 3: Deep Hygiene & Sanitization -->
+<article class="service-item group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_16px_36px_rgba(20,33,29,0.05)] hover:shadow-[0_24px_48px_rgba(20,33,29,0.1)] transition-all duration-300" data-category="residential">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Deep Hygiene &amp; Sanitization" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up view of professional cleaning technician steam cleaning high-end marble tiles and stainless steel stove hood in luxury kitchen, pristine bubbles, warm natural aesthetic, sparkling finish, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA--dDwDESwFb_JzFfjb9n8g7bah5YdikXjCbadIWSBC-hh_KdIaguCeMVcMbJHW_1UHqi62huGLqKEHbte01uTsjBQTVCbhApctWT4BpGa9YNPFiQHQzjY-qtX0jdtIoxvY0u9NG6Hv7So6ea8pcINPsAaOHRhioZkgPvU8qRDAl-gFSTGKVM808z2DyAmrxzERY7nVgc1PQ14kRlFLuoCvFIkr0ncZ3NfJKl2zFc"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Residential Care
+              </span>
+</div>
+<a class="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold shadow-[0_8px_16px_rgba(218,234,48,0.35)] hover:bg-secondary-fixed transition-all" href="#quote-calculator">
+              Book Service
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-surface-tint transition-colors">Deep Hygiene &amp; Sanitization</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">From ₹4,999</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                An intensive restorative intervention. Heavy grease eradication, grout steam-stripping, exhaust clearing, and total scale dissolution.
+              </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  180°C pressurized dry-steam grout sanitization
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Chimney, hob &amp; oven alkaline degreasing
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Hard water stain &amp; limescale bathroom renewal
+                </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">timer</span>
+                6 - 8 Hours Overhaul
+              </span>
+<span class="font-semibold text-primary">3-4 Senior Specialists</span>
+</div>
+</div>
+</article>
+<!-- CARD 4: Move-In / Move-Out Turnover -->
+<article class="service-item group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_16px_36px_rgba(20,33,29,0.05)] hover:shadow-[0_24px_48px_rgba(20,33,29,0.1)] transition-all duration-300" data-category="residential">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Move-In Move-Out Turnover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An empty spacious luxury apartment penthouse with parquet wooden floors polished to mirror finish, bright sunlight streaming through large floor-to-ceiling windows, sanitized cabinetry open for inspection, clean editorial look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2mMzB4Xvl3LD4jKWnLv_eQwRRsYaLkkpWmaEc1f0Yg4gBscLIflzKXkPWmHiJhCi1R5VxqHwRHzTiPHqoajJKeEItd-cq4g8yjfct13hPV1pPyeU01kbIb21ZfVfi8ScWXSPBGnNWqzkdHCOfRKK04Zb6w6NNY00yXDwBXKfsEt-esM-AJLS6U5__Qko0mP4S9tIeDMcKsgWcDcDf-8OXS81cG1UV3_PE6L8gUxU"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Residential Care
+              </span>
+</div>
+<a class="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold shadow-[0_8px_16px_rgba(218,234,48,0.35)] hover:bg-secondary-fixed transition-all" href="#quote-calculator">
+              Book Service
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-surface-tint transition-colors">Move-In / Move-Out Turnover</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">From ₹3,899</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Guaranteed landlord &amp; prospective tenant inspection clearance. Total interior sanitization of empty closets, drawers, and fixtures.
+              </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Cabinetry interior, shelving &amp; baseboard detailing
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Full balcony washdown &amp; window sill scrubbing
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  100% Security deposit signoff guarantee
+                </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">fact_check</span>
+                Inspection Ready Checklist
+              </span>
+<span class="font-semibold text-primary">Instant Handover</span>
+</div>
+</div>
+</article>
+<!-- CARD 5: Facade & High Glass Detailing -->
+<article class="service-item group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_16px_36px_rgba(20,33,29,0.05)] hover:shadow-[0_24px_48px_rgba(20,33,29,0.1)] transition-all duration-300" data-category="specialized">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Facade &amp; Glass Window Detailing" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Skilled facade cleaner wearing safety harness and helmet cleaning panoramic glass window of a modern corporate highrise building with squeegee, crystal clear blue sky reflection on building glass, clean high angle view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwXnrYG4JsUr3Ut8gOxMTQx65Di68BOphRWfS1f5AxTwwrRhCy0lsw0BzGkVz7NEUA0-SuONQwWpJ5SQer5ymfZTKnSMbrI50goWBxSjm2D9kch7dv1Mw7cx78otxf_8_DRfYi70CKrF7Q5hpexK3q34QPJ02XV2FDK6-Fd1UETsR_CoCQuoCNV9PmgJqc-mfesPFMNYmcfbewnyk1dz8Ddv922i-YWBNJHHH1mBQ"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                Specialized Surfaces
+              </span>
+</div>
+<a class="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold shadow-[0_8px_16px_rgba(218,234,48,0.35)] hover:bg-secondary-fixed transition-all" href="#quote-calculator">
+              Book Service
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-surface-tint transition-colors">Facade &amp; Glass Architecture</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">Custom Survey</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Crystal optical clarity for exterior architectural glass curtain walls, atriums, French windows, and storefront showcases.
+              </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Pure deionized water treatment for spot-free drying
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Rope access certified &amp; OSHA/IS compliant rigging
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Hydrophobic protective sealants against acid rain
+                </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">shield</span>
+                Certified Riggers
+              </span>
+<span class="font-semibold text-primary">Zero Hazard Record</span>
+</div>
+</div>
+</article>
+<!-- CARD 6: Post-Construction Cleanup -->
+<article class="service-item group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_16px_36px_rgba(20,33,29,0.05)] hover:shadow-[0_24px_48px_rgba(20,33,29,0.1)] transition-all duration-300" data-category="commercial">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Post-Construction Restoration" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Industrial vacuum and post renovation cleaning crew removing paint spatters and sawdust from newly finished luxury architectural wood interior, spotless pristine lighting, warm beige ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAihnPwCuEXByRAUH1zvYZTmZfqNvG2JjdDWLWsK-zchWrlabUw1ZDUG05amVqZJP0NPPtgfKpSFER-4jfGamHMhplI7We34GPrKJSCEqkgDajKEVIMcrlGNdWKjQLZlZPiXHIpAWTBi3NvkBVyzpX3r4oN0ARuMXAlrUa4hnbp5nln02eR_jzd02yjAAnI5jtRC37vGhRna8-Je4fyfLv7FRSJ-PSl6vCMdyGlMdE"/>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                Corporate &amp; Commercial
+              </span>
+</div>
+<a class="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold shadow-[0_8px_16px_rgba(218,234,48,0.35)] hover:bg-secondary-fixed transition-all" href="#quote-calculator">
+              Book Service
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-surface-tint transition-colors">Post-Construction Restoration</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">From ₹7,500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Eradication of fine silica dust, paint spatter, cement runoff, and adhesive masking residues from newly commissioned estates.
+              </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Industrial HEPA air scrubbing &amp; particulate filtration
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Specialized non-scratch scrapers for tile &amp; marble
+                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  Air vent &amp; duct ingress micro-suction detailing
+                </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">handyman</span>
+                Heavy-Duty Industrial Tools
+              </span>
+<span class="font-semibold text-primary">Move-In Ready</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SECTION 4: THE KADLAG WORKFLOW & GUARANTEE (Inspired by Reference Section) -->
+<section class="py-space-3xl px-margin md:px-margin-desktop bg-surface-container-low relative">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left Visual Side with Overlapping Trust Badges -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(20,33,29,0.08)] aspect-[5/4] bg-surface-container-high">
+<img alt="Kadlag Quality Team" class="w-full h-full object-cover" data-alt="Two professional hospitality cleaning technicians in tidy aprons smiling warmly, holding eco-certified cleaning spray and caddy in a sun-drenched serene home hallway, elegant organic interior, soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhRbCLvO1ru-ckV9g33GdQJ6YlAWBIIjWGBqWdvRweWToPPLCW1yOoWtc5dTU6YHXDmYaeINeJmqJ-SCJoqpY_xmA2iV7Qiya9h7nF6kdUlOAruiveAPfhewa1c9swtmftPcmsSrxnJKkD6pekdfla7B_hN_oW0sJ4NGbB7dfoxJZWz07Jxpy5KT_BGv1qmnqOyRkKy-hmv4G1j2I_FDTxZobgDr7sF8HhtngigrU"/>
+</div>
+<!-- Floating Stat Badge 1: 98% Satisfaction -->
+<div class="absolute -bottom-6 -left-4 md:-bottom-8 md:left-6 bg-surface-container-lowest p-space-md rounded-xl shadow-[0_16px_36px_rgba(20,33,29,0.08)] flex items-center gap-space-md max-w-xs">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">workspace_premium</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold leading-none">98.6%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Audit Score Approval</p>
+</div>
+</div>
+<!-- Floating Stat Badge 2: Verified Shield -->
+<div class="hidden sm:flex absolute -top-6 -right-4 bg-primary-container text-surface-container p-space-md rounded-xl shadow-[0_16px_36px_rgba(20,33,29,0.15)] items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span>
+<div>
+<p class="font-label-sm text-label-sm text-surface font-bold uppercase tracking-wider">The Kadlag Guarantee</p>
+<p class="font-body-sm text-body-sm text-surface-variant text-[12px]">Free Re-clean within 24h</p>
+</div>
+</div>
+</div>
+<!-- Right Content: Step-by-Step Workflow -->
+<div class="lg:col-span-6 space-y-space-xl">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Standard Operating Protocol</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs leading-tight">
+              How Kadlag Orchestrates <br class="hidden sm:inline"/>Effortless Cleanliness.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              We replace unpredictable domestic labor with standardized hotel-grade protocols, rigorous background verification, and non-intrusive operations.
+            </p>
+</div>
+<!-- Timeline Steps -->
+<div class="space-y-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_8px_20px_rgba(20,33,29,0.03)] flex gap-space-md items-start">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold">
+                1
+              </div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Discovery &amp; Slot Confirmation</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Tailor Your Scope &amp; Schedule</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Select your residential layout or office square footage. Receive upfront transparent pricing without surprise surcharges.
+                </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_8px_20px_rgba(20,33,29,0.03)] flex gap-space-md items-start">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-headline-sm text-headline-sm text-primary-container font-bold">
+                2
+              </div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Execution Under Checklist</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Trained Crew Arrives Fully Equipped</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Our uniformed, police-verified sanitarians arrive with sealed, single-use color-coded microfibers, vacuums, and eco-chemistries.
+                </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_8px_20px_rgba(20,33,29,0.03)] flex gap-space-md items-start">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold">
+                3
+              </div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Supervisor Inspection</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">50-Point Handover &amp; Absolute Serenity</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Every nook is vetted against our quality assurance index. Relax in spaces infused with natural botanical freshness.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: INSTANT QUOTE & SERVICE ESTIMATOR INTERACTIVE CARD -->
+<section class="py-space-3xl px-margin md:px-margin-desktop bg-surface" id="quote-calculator">
+<div class="max-w-[1200px] mx-auto bg-primary-container text-surface-container rounded-2xl p-space-xl md:p-space-2xl shadow-[0_32px_64px_rgba(20,33,29,0.15)] relative overflow-hidden">
+<!-- Decorative Backdrop circles -->
+<div class="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-secondary-container/10 blur-[80px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Text intro -->
+<div class="lg:col-span-5 space-y-space-md">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container/10 text-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+            Transparent Quotations
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-surface leading-tight">
+            Calculate Your Facility Care Investment.
+          </h2>
+<p class="font-body-md text-body-md text-surface-variant leading-relaxed">
+            Configure your space parameters to generate an instant estimate. For custom corporate SLAs or full high-rise estates, our lead surveyor visits on-site within 24 hours.
+          </p>
+<div class="pt-space-md space-y-space-xs text-body-sm text-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">phone_in_talk</span>
+<span>Direct Booking Line: <strong class="text-surface font-semibold">+91 98230 45678</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">mail</span>
+<span>Enterprise Inquiries: <strong class="text-surface font-semibold">care@kadlagfm.com</strong></span>
+</div>
+</div>
+</div>
+<!-- Interactive Calculator Widget -->
+<div class="lg:col-span-7 bg-surface-container-lowest text-on-surface rounded-xl p-space-lg md:p-space-xl shadow-xl space-y-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary">Instant Service Configurator</h3>
+<!-- Form Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Property Type -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider" for="space-type">Service Category</label>
+<select class="w-full bg-surface-container-low rounded-lg p-space-sm font-body-md text-body-md text-primary focus:outline-none focus:ring-2 focus:ring-secondary-container" id="space-type" onchange="calculateEstimate()">
+<option value="residential">Residential Home Clean</option>
+<option value="deep">Deep Hygiene &amp; Sanitization</option>
+<option value="office">Corporate &amp; Commercial Office</option>
+<option value="move">Move-In / Move-Out Turnover</option>
+</select>
+</div>
+<!-- Size Selection -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider" for="space-size">Approximate Area</label>
+<select class="w-full bg-surface-container-low rounded-lg p-space-sm font-body-md text-body-md text-primary focus:outline-none focus:ring-2 focus:ring-secondary-container" id="space-size" onchange="calculateEstimate()">
+<option value="1">1 BHK / Compact Studio (~600 sq ft)</option>
+<option selected="" value="2">2 BHK / Mid Suite (~1,100 sq ft)</option>
+<option value="3">3 BHK / Large Suite (~1,650 sq ft)</option>
+<option value="4">4+ BHK / Penthouse / Villa (2,400+ sq ft)</option>
+<option value="commercial_sm">Commercial Unit (Under 3,000 sq ft)</option>
+</select>
+</div>
+</div>
+<!-- Add-ons Selection -->
+<div class="pt-space-xs space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider block">Specialized Add-ons</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm font-body-sm text-body-sm text-on-surface">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="rounded text-primary focus:ring-secondary-container" id="addon-balcony" onchange="calculateEstimate()" type="checkbox"/>
+                Balcony Jet Scrubbing (+₹499)
+              </label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="rounded text-primary focus:ring-secondary-container" id="addon-kitchen" onchange="calculateEstimate()" type="checkbox"/>
+                Deep Kitchen Degreasing (+₹899)
+              </label>
+</div>
+</div>
+<!-- Output Box & CTA Button -->
+<div class="pt-space-md mt-space-md bg-surface-container-low p-space-md rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Estimated Investment</span>
+<p class="font-headline-md text-headline-md text-primary font-bold leading-none mt-1" id="estimate-display">
+                ₹3,499 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">incl. GST</span>
+</p>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-space-sm rounded-full bg-secondary-container text-primary-container font-label-lg text-label-lg font-bold shadow-[0_8px_20px_rgba(218,234,48,0.35)] hover:bg-secondary-fixed active:scale-95 transition-all" onclick="confirmBooking()">
+              Schedule Service
+              <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</button>
+</div>
+<div class="hidden p-3 rounded-lg bg-secondary-container text-primary-container font-label-sm text-label-sm font-bold text-center" id="booking-toast">
+            ✓ Preference recorded! Our facility desk will reach out within 15 minutes to confirm crew allotment.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CLIENT SATISFACTION MOSAIC & CORPORATE ENDORSEMENTS -->
+<section class="py-space-2xl px-margin md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto">
+<div class="text-center max-w-xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Verified Client Feedback</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs">
+          Trusted by Discerning Residents &amp; Workplaces.
+        </h2>
+</div>
+<!-- Testimonial Mosaic Cards (Cleanora Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_12px_28px_rgba(20,33,29,0.04)] flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-on-tertiary-container gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "Their deep cleaning transformed our 3 BHK prior to housewarming. Even the toughest grout stains and heavy tile grime were scrubbed out completely without harsh chlorine fumes."
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold text-[16px]">Meera &amp; Rajesh Nair</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Baner, Pune — Deep Sanctuary Clean</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_12px_28px_rgba(20,33,29,0.04)] flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-on-tertiary-container gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "Kadlag has handled our 12,000 sq ft office facility for over two years. Incredibly disciplined staff, proactive supervisors, and zero disruption to day shifts. An indispensable vendor partner."
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold text-[16px]">Vikram Singhania</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Operations Head, TechPark Magarpatta</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_12px_28px_rgba(20,33,29,0.04)] flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-on-tertiary-container gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "Booked the move-out turnover clean. The landlord inspected and approved our 100% security deposit with zero deductions! Will always use Kadlag for any transition."
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold text-[16px]">Ananya Deshmukh</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Koregaon Park — Turnover Clean</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- JAVASCRIPT: Client-Side Tab Filtering & Interactive Quote Logic -->
+<script>
+    function filterServices(category, btnElement) {
+      // Manage tab buttons
+      const buttons = document.querySelectorAll('.service-tab-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      btnElement.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      btnElement.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+
+      // Filter cards
+      const cards = document.querySelectorAll('.service-item');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+        } else {
+          card.classList.remove('flex');
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    function calculateEstimate() {
+      const type = document.getElementById('space-type').value;
+      const size = document.getElementById('space-size').value;
+      const balcony = document.getElementById('addon-balcony').checked;
+      const kitchen = document.getElementById('addon-kitchen').checked;
+
+      let base = 2499;
+      if (type === 'deep') base = 4499;
+      if (type === 'office') base = 5999;
+      if (type === 'move') base = 3899;
+
+      let multiplier = 1;
+      if (size === '1') multiplier = 0.85;
+      if (size === '2') multiplier = 1.0;
+      if (size === '3') multiplier = 1.35;
+      if (size === '4') multiplier = 1.8;
+      if (size === 'commercial_sm') multiplier = 2.2;
+
+      let total = Math.round(base * multiplier);
+      if (balcony) total += 499;
+      if (kitchen) total += 899;
+
+      document.getElementById('estimate-display').innerHTML = `₹${total.toLocaleString('en-IN')} <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">incl. GST</span>`;
+    }
+
+    function confirmBooking() {
+      const toast = document.getElementById('booking-toast');
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 5000);
+    }
+  </script>
+</div></main>
+<!-- BEGIN: SiteFooter -->
+<footer class="bg-primary-container text-surface-container border-t border-outline-variant/20 pt-space-2xl pb-space-xl mt-space-3xl">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl border-b border-outline-variant/15">
+<!-- Brand prominence -->
+<div class="lg:col-span-2 space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<img alt="Kadlag Facility Management Logo" class="h-12 w-auto object-contain bg-surface-container-lowest rounded-lg p-1.5 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3heLnI25CIL40HQxE4zvk8uboIQ2CLmV7C9Y1ZVlsvvgrw-drsUI1n0jBvpCIqp1YC7dNjnuOYZkJ8Xus_m2WfUkTR3jaPcIVwMwR2a82_dGVYIGVY4_gKDud8275MXxX2rl34EInxe7YuiMhmwEMfhQFSVdHGk3scZdJFISRvmJUYuD7dExVr_BSDzc910aFbwmcyuOIfNSuXmw5BUrN4z2D0mW2mbrpqh1ezF-STa8AjTA8Hcb8"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm tracking-wider text-surface uppercase leading-tight">KADLAG</span>
+<span class="font-label-sm text-label-sm text-surface-variant font-semibold tracking-wider block">FACILITY MANAGEMENT PVT. LTD.</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-secondary-container tracking-widest uppercase font-bold">CLEAN. CARE. COMFORT.</p>
+<p class="font-body-sm text-body-sm text-surface-variant max-w-sm leading-relaxed">
+          Elevating residential sanctuaries and commercial workspaces with pristine, vetted, and planet-friendly environmental stewardship.
+        </p>
+</div>
+<!-- Links: Exploration -->
+<div>
+<h5 class="font-label-sm text-label-sm text-surface uppercase tracking-wider mb-space-md font-bold">Navigation</h5>
+<ul class="space-y-space-sm font-body-sm text-body-sm">
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="home" href="#">Home</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="about-us" href="#">About Us</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="services" href="#">Services</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="pricing" href="#">Pricing</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="contact-us" href="#">Contact Us</a></li>
+</ul>
+</div>
+<!-- Links: Services -->
+<div>
+<h5 class="font-label-sm text-label-sm text-surface uppercase tracking-wider mb-space-md font-bold">Solutions</h5>
+<ul class="space-y-space-sm font-body-sm text-body-sm">
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="services" href="#">Residential Home Clean</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="services" href="#">Commercial &amp; Offices</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="services" href="#">Deep Spring Cleaning</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" data-path="services" href="#">Move-in / Move-out</a></li>
+</ul>
+</div>
+<!-- Links: Trust & Guarantee -->
+<div>
+<h5 class="font-label-sm text-label-sm text-surface uppercase tracking-wider mb-space-md font-bold">Assurance</h5>
+<ul class="space-y-space-sm font-body-sm text-body-sm">
+<li><a class="text-surface-variant hover:text-surface transition-colors" href="#">100% Quality Guarantee</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" href="#">Eco-Certified Solutions</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-surface-variant hover:text-surface transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between font-body-sm text-body-sm text-surface-variant">
+<p>© 2025 Kadlag Facility Management Pvt. Ltd. All rights reserved.</p>
+<p class="mt-space-sm sm:mt-0">Crafted with care for pure, radiant living and work spaces.</p>
+</div>
+</div>
+</footer>
+<!-- END: SiteFooter -->
+</body></html>
