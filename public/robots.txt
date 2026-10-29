@@ -3,5 +3,5 @@ User-agent: *
 Allow: /
 
 # Sitemap Index
-Sitemap: https://kadlagfacility.com/sitemap.xml
+Sitemap: https://www.kadlagfacilitymanagement.com/sitemap.xml
 
