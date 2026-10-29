@@ -78,7 +78,7 @@ export default function ContactUsPage({ onOpenBooking, onNavigateHome }) {
         _captcha: 'false',
       };
 
-      await fetch('https://formsubmit.co/ajax/mayur.kadlag@gmail.com', {
+      await fetch('https://formsubmit.co/ajax/Support@kadlagfacilitymanagement.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -193,7 +193,7 @@ export default function ContactUsPage({ onOpenBooking, onNavigateHome }) {
                     Kadlag Facility Management Pvt. Ltd.
                   </h3>
                   <p className="text-stone-600 text-xs leading-relaxed">
-                    Sangamner, Maharashtra, India. Active operations serving commercial zones and residential corridors across Maharashtra.
+                    Wagholi, Pune, Maharashtra, India. Active operations serving commercial hubs, IT corridors, industrial zones, and residential societies across Pune and Maharashtra.
                   </p>
                 </div>
               </div>
@@ -238,10 +238,10 @@ export default function ContactUsPage({ onOpenBooking, onNavigateHome }) {
                   </p>
                   <div className="flex flex-col">
                     <a
-                      href="mailto:mayur.kadlag@gmail.com"
+                      href="mailto:Support@kadlagfacilitymanagement.com"
                       className="text-xs sm:text-sm text-[#11181C] font-semibold hover:underline"
                     >
-                      mayur.kadlag@gmail.com
+                      Support@kadlagfacilitymanagement.com
                     </a>
                     <span className="text-xs text-stone-500">
                       Prompt replies within 60 minutes
@@ -279,15 +279,15 @@ export default function ContactUsPage({ onOpenBooking, onNavigateHome }) {
                   </span>
                 </div>
                 <span className="text-xs text-stone-500 font-medium">
-                  Sangamner, Maharashtra
+                  Wagholi, Pune, Maharashtra
                 </span>
               </div>
 
               {/* Embedded Google Map */}
               <div className="w-full h-64 sm:h-72 rounded-xl overflow-hidden border border-stone-200 relative shadow-inner">
                 <iframe
-                  title="KADLAG Facility Management Location - Sangamner, Maharashtra"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60064.20455589417!2d74.17551846985061!3d19.57390977479743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd003923d83cd7%3A0xb363414917dcab7e!2sSangamner%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin"
+                  title="KADLAG Facility Management Location - Wagholi, Pune, Maharashtra"
+                  src="https://www.google.com/maps?q=Wagholi,+Pune,+Maharashtra&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -302,10 +302,10 @@ export default function ContactUsPage({ onOpenBooking, onNavigateHome }) {
               <div className="mt-3 flex items-center justify-between text-xs text-stone-600 px-1 pt-1">
                 <div className="flex items-center gap-1.5 font-medium">
                   <MapPin className="w-3.5 h-3.5 text-[#5C6300]" />
-                  <span>Serving Maharashtra Commercial &amp; Residential Estates</span>
+                  <span>Serving Pune &amp; Maharashtra Commercial &amp; Residential Estates</span>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Sangamner,+Maharashtra,+India"
+                  href="https://maps.google.com/?q=Wagholi,+Pune,+Maharashtra,+India"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#5C6300] hover:underline font-bold"
@@ -409,7 +409,7 @@ export default function ContactUsPage({ onOpenBooking, onNavigateHome }) {
                       name="location"
                       value={formData.location}
                       onChange={handleChange}
-                      placeholder="e.g. Sangamner MIDC / City Center"
+                      placeholder="e.g. Wagholi, Pune / Nagar Road / Kharadi"
                       required
                       type="text"
                       className="w-full bg-stone-50 border border-stone-200 px-4 py-2.5 rounded-xl text-sm text-[#11181C] focus:bg-white focus:ring-2 focus:ring-[#E6E726] focus:outline-none transition-all placeholder:text-stone-400"

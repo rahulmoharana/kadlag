@@ -19,7 +19,7 @@ export default function ContactBanner({ onOpenBooking }) {
     service: 'Professional Housekeeping Services',
     facilityType: 'Corporate Office',
     area: '',
-    location: 'Sangamner, Maharashtra',
+    location: 'Wagholi, Pune, Maharashtra',
     message: '',
   });
 
@@ -44,14 +44,14 @@ export default function ContactBanner({ onOpenBooking }) {
         service: formData.service,
         facilityType: formData.facilityType,
         area: formData.area || 'N/A',
-        location: formData.location || 'Sangamner, Maharashtra',
+        location: formData.location || 'Wagholi, Pune, Maharashtra',
         message: formData.message || 'N/A',
         _subject: `New Facility Enquiry: ${formData.service} - ${formData.name}`,
         _template: 'table',
         _captcha: 'false',
       };
 
-      await fetch('https://formsubmit.co/ajax/mayur.kadlag@gmail.com', {
+      await fetch('https://formsubmit.co/ajax/Support@kadlagfacilitymanagement.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export default function ContactBanner({ onOpenBooking }) {
       service: 'Professional Housekeeping Services',
       facilityType: 'Corporate Office',
       area: '',
-      location: 'Sangamner, Maharashtra',
+      location: 'Wagholi, Pune, Maharashtra',
       message: '',
     });
   };
@@ -187,8 +187,8 @@ export default function ContactBanner({ onOpenBooking }) {
                   <span className="text-[10px] font-bold uppercase tracking-wider text-stone-400">
                     Location
                   </span>
-                  <p className="text-sm font-semibold text-white">Sangamner, Maharashtra, India</p>
-                  <p className="text-xs text-stone-400 mt-0.5">Serving Ahmednagar, Pune &amp; Nashik regions</p>
+                  <p className="text-sm font-semibold text-white">Wagholi, Pune, Maharashtra, India</p>
+                  <p className="text-xs text-stone-400 mt-0.5">Serving Pune, PCMC &amp; Maharashtra regions</p>
                 </div>
               </div>
 
@@ -218,8 +218,8 @@ export default function ContactBanner({ onOpenBooking }) {
                     Email
                   </span>
                   <p className="text-sm font-semibold text-white">
-                    <a href="mailto:mayur.kadlag@gmail.com" className="hover:text-[#E6E726] transition-colors">
-                      mayur.kadlag@gmail.com
+                    <a href="mailto:Support@kadlagfacilitymanagement.com" className="hover:text-[#E6E726] transition-colors">
+                      Support@kadlagfacilitymanagement.com
                     </a>
                   </p>
                   <p className="text-xs text-stone-400 mt-0.5">Prompt quotation responses</p>
@@ -250,12 +250,12 @@ export default function ContactBanner({ onOpenBooking }) {
                   <MapPin className="w-3.5 h-3.5" />
                   Headquarters Location Map
                 </span>
-                <span className="text-stone-400 text-[11px]">Sangamner, Maharashtra</span>
+                <span className="text-stone-400 text-[11px]">Wagholi, Pune</span>
               </div>
               <div className="w-full h-48 sm:h-52">
                 <iframe
-                  title="KADLAG Location - Sangamner, Maharashtra"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60064.20455589417!2d74.17551846985061!3d19.57390977479743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd003923d83cd7%3A0xb363414917dcab7e!2sSangamner%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin"
+                  title="KADLAG Location - Wagholi, Pune, Maharashtra"
+                  src="https://www.google.com/maps?q=Wagholi,+Pune,+Maharashtra&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -289,7 +289,7 @@ export default function ContactBanner({ onOpenBooking }) {
                   <div>
                     <h5 className="text-base font-bold text-white">Enquiry Received Successfully!</h5>
                     <p className="text-xs text-stone-300 mt-0.5">
-                      Thank you, <span className="text-[#E6E726] font-semibold">{formData.name}</span>. Our Sangamner team will review your specs and contact you within 2 hours.
+                      Thank you, <span className="text-[#E6E726] font-semibold">{formData.name}</span>. Our Pune team will review your specs and contact you within 2 hours.
                     </p>
                   </div>
                 </div>
@@ -411,7 +411,7 @@ export default function ContactBanner({ onOpenBooking }) {
                       name="location"
                       value={formData.location}
                       onChange={handleChange}
-                      placeholder="e.g. Sangamner, Maharashtra"
+                      placeholder="e.g. Wagholi, Pune, Maharashtra"
                       className="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/15 text-white placeholder-stone-400 text-xs focus:outline-none focus:ring-2 focus:ring-[#E6E726]"
                     />
                   </div>

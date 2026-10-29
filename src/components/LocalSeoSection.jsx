@@ -20,15 +20,15 @@ export default function LocalSeoSection({ onOpenBooking }) {
             <div className="lg:col-span-7 space-y-5">
               <div className="inline-flex items-center text-xs font-bold tracking-widest uppercase text-stone-600 space-x-1.5 bg-[#F8F8F5] px-3.5 py-1.5 rounded-full border border-[#E6E8EB]">
                 <MapPin className="w-3.5 h-3.5 text-[#E6E726]" />
-                <span>Sangamner, Maharashtra</span>
+                <span>Wagholi, Pune, Maharashtra</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-[#11181C] leading-tight">
-                Facility Management Services in Sangamner, Maharashtra
+                Facility Management Services in Wagholi, Pune
               </h2>
 
               <p className="text-[#11181C] text-sm sm:text-base font-medium leading-relaxed">
-                If you are looking for housekeeping services, manpower supply, or facility hygiene support in Sangamner, Maharashtra, KADLAG Facility Management is ready to discuss your requirements.
+                If you are looking for housekeeping services, manpower supply, or facility hygiene support in Wagholi, Pune, Maharashtra, KADLAG Facility Management is ready to discuss your requirements.
               </p>
 
               <p className="text-[#687076] text-sm sm:text-base leading-relaxed">
@@ -56,7 +56,7 @@ export default function LocalSeoSection({ onOpenBooking }) {
               {/* Action Button */}
               <div className="pt-4 flex flex-wrap items-center gap-3">
                 <button
-                  onClick={() => onOpenBooking('Sangamner Facility Enquiry')}
+                  onClick={() => onOpenBooking('Wagholi, Pune Facility Enquiry')}
                   id="local-seo-contact-btn"
                   className="inline-flex items-center px-7 py-3 rounded-full bg-[#E6E726] hover:bg-[#D4D51E] text-black text-sm font-semibold tracking-wide transition-all shadow-sm hover:shadow active:scale-95 cursor-pointer"
                 >
@@ -93,7 +93,7 @@ export default function LocalSeoSection({ onOpenBooking }) {
                       Service Location
                     </span>
                     <p className="font-semibold text-stone-900">
-                      Sangamner, Maharashtra, India
+                      Wagholi, Pune, Maharashtra, India
                     </p>
                     <p className="text-xs text-stone-500 mt-0.5">
                       Serving corporate, industrial, healthcare, and residential properties.
@@ -117,10 +117,10 @@ export default function LocalSeoSection({ onOpenBooking }) {
                       Official Email
                     </span>
                     <a
-                      href="mailto:mayur.kadlag@gmail.com"
+                      href="mailto:Support@kadlagfacilitymanagement.com"
                       className="font-semibold text-stone-900 hover:underline block"
                     >
-                      mayur.kadlag@gmail.com
+                      Support@kadlagfacilitymanagement.com
                     </a>
                   </div>
                 </div>

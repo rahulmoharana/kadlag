@@ -10,7 +10,7 @@ export default function AboutSection({ onOpenBooking, onNavigateToAbout }) {
   ];
 
   const metrics = [
-    { value: 'Sangamner', label: 'Headquartered in MH' },
+    { value: 'Wagholi, Pune', label: 'Headquartered in MH' },
     { value: '100%', label: 'Verified & Trained Staff' },
     { value: 'ESI / PF', label: 'Compliance & Documentation' },
     { value: 'Reliable', label: 'Daily Operational Support' },
@@ -113,7 +113,7 @@ export default function AboutSection({ onOpenBooking, onNavigateToAbout }) {
               <div className="text-left">
                 <p className="text-xs text-[#687076] font-medium">Trusted By Our Clients</p>
                 <p className="text-sm font-bold text-[#11181C]">
-                  Sangamner &amp; MH <span className="text-xs font-normal text-[#687076]">Businesses</span>
+                  Wagholi, Pune &amp; MH <span className="text-xs font-normal text-[#687076]">Businesses</span>
                 </p>
               </div>
             </div>

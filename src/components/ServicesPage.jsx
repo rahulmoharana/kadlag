@@ -257,7 +257,7 @@ export default function ServicesPage({ onOpenBooking, onNavigateHome }) {
                   Active Operations
                 </span>
                 <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#E6E726] text-black text-xs font-bold">
-                  Sangamner &amp; Maharashtra
+                  Wagholi, Pune &amp; MH
                 </span>
               </div>
               <div className="grid grid-cols-3 gap-2 pt-1 text-center">
@@ -567,10 +567,10 @@ export default function ServicesPage({ onOpenBooking, onNavigateHome }) {
                   <span>
                     Enterprise Inquiries:{' '}
                     <a
-                      href="mailto:mayur.kadlag@gmail.com"
+                      href="mailto:Support@kadlagfacilitymanagement.com"
                       className="text-white font-bold hover:underline"
                     >
-                      mayur.kadlag@gmail.com
+                      Support@kadlagfacilitymanagement.com
                     </a>
                   </span>
                 </div>

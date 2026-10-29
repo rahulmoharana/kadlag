@@ -13,7 +13,7 @@ export default function FaqSection({ onOpenBooking }) {
     {
       question: 'Where is KADLAG Facility Management located?',
       answer:
-        'KADLAG Facility Management is based in Sangamner, Maharashtra, India. Contact the team to confirm service availability for your location.',
+        'KADLAG Facility Management is based in Wagholi, Pune, Maharashtra, India. Contact the team to confirm service availability for your location.',
     },
     {
       question: 'Does KADLAG provide housekeeping services for offices?',
@@ -40,10 +40,10 @@ export default function FaqSection({ onOpenBooking }) {
           </a>
           , email{' '}
           <a
-            href="mailto:mayur.kadlag@gmail.com"
+            href="mailto:Support@kadlagfacilitymanagement.com"
             className="font-bold text-black underline"
           >
-            mayur.kadlag@gmail.com
+            Support@kadlagfacilitymanagement.com
           </a>
           , or submit an enquiry through the Contact section with your facility details and service requirements.
         </span>
@@ -122,7 +122,7 @@ export default function FaqSection({ onOpenBooking }) {
           <div>
             <h4 className="text-base font-bold text-[#11181C]">Have more questions about your premises?</h4>
             <p className="text-xs text-stone-500 mt-1">
-              Speak directly with our operations team in Sangamner for personalized advice.
+              Speak directly with our operations team in Wagholi, Pune for personalized advice.
             </p>
           </div>
           <button

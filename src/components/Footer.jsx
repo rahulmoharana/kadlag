@@ -37,7 +37,7 @@ export default function Footer({ navigateTo }) {
             </p>
 
             <p className="text-xs text-stone-400 max-w-sm leading-relaxed">
-              Professional housekeeping, manpower supply, and facility hygiene solutions for businesses and facilities in Sangamner, Maharashtra.
+              Professional housekeeping, manpower supply, and facility hygiene solutions for businesses and facilities in Wagholi, Pune, Maharashtra.
             </p>
           </div>
 
@@ -145,13 +145,13 @@ export default function Footer({ navigateTo }) {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-3.5 h-3.5 text-[#E6E726] flex-shrink-0" />
-                <a href="mailto:mayur.kadlag@gmail.com" className="hover:text-white transition-colors">
-                  mayur.kadlag@gmail.com
+                <a href="mailto:Support@kadlagfacilitymanagement.com" className="hover:text-white transition-colors">
+                  Support@kadlagfacilitymanagement.com
                 </a>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="w-3.5 h-3.5 text-[#E6E726] flex-shrink-0 mt-0.5" />
-                <span>Sangamner, Maharashtra, India</span>
+                <span>Wagholi, Pune, Maharashtra, India</span>
               </li>
             </ul>
           </div>

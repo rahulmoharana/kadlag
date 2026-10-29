@@ -56,13 +56,13 @@ export default function BookingModal({
         phone: phone || 'Not provided',
         service: service,
         preferredDate: date || 'Flexible',
-        facilityLocation: address || 'Sangamner, Maharashtra',
+        facilityLocation: address || 'Wagholi, Pune, Maharashtra',
         _subject: `New Facility Booking Enquiry: ${service} - ${name || 'Client'}`,
         _template: 'table',
         _captcha: 'false',
       };
 
-      await fetch('https://formsubmit.co/ajax/mayur.kadlag@gmail.com', {
+      await fetch('https://formsubmit.co/ajax/Support@kadlagfacilitymanagement.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -122,7 +122,7 @@ export default function BookingModal({
                 </p>
               )}
               <p className="text-[11px] text-[#22C55E] font-semibold pt-1">
-                ✓ Sangamner, Maharashtra Operations Hub notified
+                ✓ Wagholi, Pune Operations Hub notified
               </p>
             </div>
             <div className="pt-4 flex flex-col sm:flex-row gap-2">
@@ -153,7 +153,7 @@ export default function BookingModal({
 
             <h3 className="text-2xl font-bold text-[#11181C]">Request a Consultation</h3>
             <p className="text-xs text-stone-500 mt-1">
-              CLEAN. CARE. COMFORT. • Sangamner, Maharashtra
+              CLEAN. CARE. COMFORT. • Wagholi, Pune, Maharashtra
             </p>
 
             <form onSubmit={handleSubmit} className="mt-6 space-y-4">
@@ -253,7 +253,7 @@ export default function BookingModal({
                     rows={2}
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
-                    placeholder="e.g. Corporate Office, Sangamner (sq ft or requirements)..."
+                    placeholder="e.g. Corporate Office, Wagholi, Pune (sq ft or requirements)..."
                     className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-stone-200 text-xs text-stone-900 focus:outline-none focus:ring-2 focus:ring-[#E6E726] resize-none"
                   />
                 </div>

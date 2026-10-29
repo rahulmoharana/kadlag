@@ -13,7 +13,7 @@ export default function Hero({ onOpenBooking }) {
       <div className="absolute inset-0 -top-px z-0 overflow-hidden">
         <img
           src={heroImg}
-          alt="Professional Housekeeping & Facility Management Services in Sangamner - KADLAG"
+          alt="Professional Housekeeping & Facility Management Services in Wagholi, Pune - KADLAG"
           className="w-full h-full object-cover object-top"
         />
       </div>
