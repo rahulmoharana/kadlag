@@ -51,7 +51,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
     {
       id: 'home',
       label: 'Home',
-      hash: '#hero',
+      hash: '/',
       view: 'home',
       icon: Home,
       desc: 'Main overview & facility solutions',
@@ -59,7 +59,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
     {
       id: 'about',
       label: 'About Us',
-      hash: '#about-us',
+      hash: '/about-us',
       view: 'about',
       icon: Users,
       desc: 'Our founding philosophy & dignity standard',
@@ -67,7 +67,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
     {
       id: 'services',
       label: 'Services',
-      hash: '#services-page',
+      hash: '/services',
       view: 'services',
       icon: Sparkle,
       desc: '6 specialized programs & price calculator',
@@ -75,7 +75,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
     {
       id: 'contact',
       label: 'Contact',
-      hash: '#contact-us',
+      hash: '/contact-us',
       view: 'contact',
       icon: MessageSquare,
       desc: 'Direct dispatch, 15-min SLA & site assessment',
@@ -93,7 +93,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
           {/* Wordmark & Bigger Logo (Unchanged for Desktop) */}
           <button
             type="button"
-            onClick={() => handleNavClick('home', '#hero')}
+            onClick={() => handleNavClick('home', '/')}
             className="flex items-center hover:opacity-90 transition-opacity group cursor-pointer border-0 bg-transparent p-0 text-left"
             aria-label="KADLAG Facility Management"
           >
@@ -108,7 +108,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
           <nav className="hidden lg:flex items-center space-x-8 text-sm font-semibold">
             <button
               type="button"
-              onClick={() => handleNavClick('home', '#hero')}
+              onClick={() => handleNavClick('home', '/')}
               className={`transition-colors cursor-pointer border-0 bg-transparent p-0 py-1 relative ${
                 currentView === 'home'
                   ? "text-[#11181C] font-bold after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:bg-[#E6E726]"
@@ -120,7 +120,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
 
             <button
               type="button"
-              onClick={() => handleNavClick('about', '#about-us')}
+              onClick={() => handleNavClick('about', '/about-us')}
               className={`transition-colors cursor-pointer border-0 bg-transparent p-0 py-1 relative ${
                 currentView === 'about'
                   ? "text-[#11181C] font-bold after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:bg-[#E6E726]"
@@ -132,7 +132,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
 
             <button
               type="button"
-              onClick={() => handleNavClick('services', '#services-page')}
+              onClick={() => handleNavClick('services', '/services')}
               className={`transition-colors cursor-pointer border-0 bg-transparent p-0 py-1 relative ${
                 currentView === 'services'
                   ? "text-[#11181C] font-bold after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:bg-[#E6E726]"
@@ -144,7 +144,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
 
             <button
               type="button"
-              onClick={() => handleNavClick('contact', '#contact-us')}
+              onClick={() => handleNavClick('contact', '/contact-us')}
               className={`transition-colors cursor-pointer border-0 bg-transparent p-0 py-1 relative ${
                 currentView === 'contact'
                   ? "text-[#11181C] font-bold after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:bg-[#E6E726]"
@@ -398,7 +398,7 @@ export default function Navbar({ onOpenBooking, currentView = 'home', navigateTo
         </button>
 
         <button
-          onClick={() => handleNavClick('services', '#services-page')}
+          onClick={() => handleNavClick('services', '/services')}
           className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl transition-colors cursor-pointer ${
             currentView === 'services'
               ? 'text-black font-bold'

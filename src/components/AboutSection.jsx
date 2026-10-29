@@ -60,7 +60,7 @@ export default function AboutSection({ onOpenBooking, onNavigateToAbout }) {
             <div className="pt-4 flex flex-wrap items-center gap-3">
               <button
                 type="button"
-                onClick={() => onNavigateToAbout ? onNavigateToAbout() : (window.location.hash = '#about-us')}
+                onClick={() => onNavigateToAbout ? onNavigateToAbout() : (window.location.pathname = '/about-us')}
                 className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-[#E6E726] hover:bg-[#D4D51E] text-black text-sm font-semibold transition-all shadow-sm hover:shadow cursor-pointer"
               >
                 <span>Learn More About Us</span>

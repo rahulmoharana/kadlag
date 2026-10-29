@@ -50,7 +50,7 @@ export default function Footer({ navigateTo }) {
               <li>
                 <button
                   type="button"
-                  onClick={() => handleNav('home', '#hero')}
+                  onClick={() => handleNav('home', '/')}
                   className="hover:text-white transition-colors cursor-pointer border-0 bg-transparent p-0 text-left text-xs"
                 >
                   Home
@@ -59,7 +59,7 @@ export default function Footer({ navigateTo }) {
               <li>
                 <button
                   type="button"
-                  onClick={() => handleNav('about', '#about-us')}
+                  onClick={() => handleNav('about', '/about-us')}
                   className="hover:text-white transition-colors cursor-pointer border-0 bg-transparent p-0 text-left text-xs"
                 >
                   About Us
@@ -68,7 +68,7 @@ export default function Footer({ navigateTo }) {
               <li>
                 <button
                   type="button"
-                  onClick={() => handleNav('services', '#services-page')}
+                  onClick={() => handleNav('services', '/services')}
                   className="hover:text-white transition-colors cursor-pointer border-0 bg-transparent p-0 text-left text-xs"
                 >
                   Services
@@ -77,7 +77,7 @@ export default function Footer({ navigateTo }) {
               <li>
                 <button
                   type="button"
-                  onClick={() => handleNav('contact', '#contact-us')}
+                  onClick={() => handleNav('contact', '/contact-us')}
                   className="hover:text-white transition-colors cursor-pointer border-0 bg-transparent p-0 text-left text-xs"
                 >
                   Contact Us

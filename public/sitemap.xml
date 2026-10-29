@@ -13,7 +13,7 @@
 
   <!-- About Us Page -->
   <url>
-    <loc>https://kadlagfacility.com/#about-us</loc>
+    <loc>https://kadlagfacility.com/about-us</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -21,7 +21,7 @@
 
   <!-- Services Portfolio & Calculator Page -->
   <url>
-    <loc>https://kadlagfacility.com/#services-page</loc>
+    <loc>https://kadlagfacility.com/services</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -29,10 +29,9 @@
 
   <!-- Contact Us & Assessment Page -->
   <url>
-    <loc>https://kadlagfacility.com/#contact-us</loc>
+    <loc>https://kadlagfacility.com/contact-us</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
-

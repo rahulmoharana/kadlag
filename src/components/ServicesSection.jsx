@@ -171,7 +171,7 @@ export default function ServicesSection({ onOpenBooking, onNavigateToServices })
       <div className="mt-12 text-center">
         <button
           type="button"
-          onClick={() => onNavigateToServices ? onNavigateToServices() : (window.location.hash = '#services-page')}
+          onClick={() => onNavigateToServices ? onNavigateToServices() : (window.location.pathname = '/services')}
           className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-black text-white hover:bg-stone-800 text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all active:scale-95 cursor-pointer"
         >
           <span>Explore All 6 Specialized Solutions &amp; Instant Cost Estimator</span>

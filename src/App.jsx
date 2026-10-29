@@ -18,57 +18,71 @@ import ServicesPage from './components/ServicesPage';
 import ContactUsPage from './components/ContactUsPage';
 import FloatingCallButton from './components/FloatingCallButton';
 
+const getViewFromLocation = () => {
+  const pathname = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+  const hash = window.location.hash.toLowerCase();
+
+  if (pathname === '/about-us' || pathname === '/about' || hash === '#about-us' || hash === '#about-page') {
+    return 'about';
+  }
+  if (pathname === '/services' || pathname === '/services-page' || hash === '#services-page' || hash === '#services-portfolio') {
+    return 'services';
+  }
+  if (pathname === '/contact-us' || pathname === '/contact' || hash === '#contact-us' || hash === '#contact-page') {
+    return 'contact';
+  }
+  return 'home';
+};
+
 export default function App() {
-  const [currentView, setCurrentView] = useState(() => {
-    const hash = window.location.hash.toLowerCase();
-    if (hash === '#about-us' || hash === '#about-page') return 'about';
-    if (hash === '#services-page' || hash === '#services-portfolio') return 'services';
-    if (hash === '#contact-us' || hash === '#contact-page') return 'contact';
-    return 'home';
-  });
+  const [currentView, setCurrentView] = useState(() => getViewFromLocation());
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [selectedService, setSelectedService] = useState('Professional Housekeeping Services');
   const [prefilledEmail, setPrefilledEmail] = useState('');
 
   useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.toLowerCase();
-      if (hash === '#about-us' || hash === '#about-page') {
-        setCurrentView('about');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else if (hash === '#services-page' || hash === '#services-portfolio') {
-        setCurrentView('services');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else if (hash === '#contact-us' || hash === '#contact-page') {
-        setCurrentView('contact');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else if (hash === '#home' || hash === '#hero' || hash === '') {
-        setCurrentView('home');
-      }
+    const handleUrlChange = () => {
+      setCurrentView(getViewFromLocation());
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+
+    // Clean up legacy hash if accessed directly (e.g. #about-us -> /about-us)
+    const hash = window.location.hash.toLowerCase();
+    if (hash === '#about-us' || hash === '#about-page') {
+      window.history.replaceState({ view: 'about' }, '', '/about-us');
+    } else if (hash === '#services-page' || hash === '#services-portfolio') {
+      window.history.replaceState({ view: 'services' }, '', '/services');
+    } else if (hash === '#contact-us' || hash === '#contact-page') {
+      window.history.replaceState({ view: 'contact' }, '', '/contact-us');
+    }
+
+    window.addEventListener('popstate', handleUrlChange);
+    window.addEventListener('hashchange', handleUrlChange);
+    return () => {
+      window.removeEventListener('popstate', handleUrlChange);
+      window.removeEventListener('hashchange', handleUrlChange);
+    };
   }, []);
 
-  const navigateTo = (view, hash = '') => {
+  const navigateTo = (view, target = '') => {
     setCurrentView(view);
-    if (hash) {
-      window.location.hash = hash;
-      if (view === 'home' && hash !== '#hero' && hash !== '#home') {
-        setTimeout(() => {
-          const el = document.querySelector(hash);
-          if (el) {
-            el.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 60);
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+    let path = '/';
+    if (view === 'about') path = '/about-us';
+    else if (view === 'services') path = '/services';
+    else if (view === 'contact') path = '/contact-us';
+
+    if (window.location.pathname !== path || window.location.hash) {
+      window.history.pushState({ view }, '', path);
+    }
+
+    if (view === 'home' && target && target.startsWith('#') && target !== '#hero' && target !== '#home') {
+      setTimeout(() => {
+        const el = document.querySelector(target);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 60);
     } else {
-      if (view === 'about') window.location.hash = '#about-us';
-      else if (view === 'services') window.location.hash = '#services-page';
-      else if (view === 'contact') window.location.hash = '#contact-us';
-      else window.location.hash = '#home';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -117,13 +131,13 @@ export default function App() {
             {/* SECTION 2: ABOUT US */}
             <AboutSection
               onOpenBooking={handleOpenBooking}
-              onNavigateToAbout={() => navigateTo('about', '#about-us')}
+              onNavigateToAbout={() => navigateTo('about', '/about-us')}
             />
 
             {/* SECTION 3: OUR SERVICES */}
             <ServicesSection
               onOpenBooking={handleOpenBooking}
-              onNavigateToServices={() => navigateTo('services', '#services-page')}
+              onNavigateToServices={() => navigateTo('services', '/services')}
             />
 
             {/* SECTION 4: WHY CHOOSE US */}
